@@ -1,8 +1,6 @@
-<h1 align="center">
-<!-- <a href="https://mamayapovar.ru/" target="_blank"><img src=".assets/banner.svg" width="800" alt="Логотип «Мама, я повар!»"></a> -->
-</h1>
+# Superteach
 <p align="center">
-Репетитково — онлайн-платформа для репетиторов и учеников с конструктором заданий и системой оценок
+Superteach — онлайн-платформа для репетиторов и учеников с конструктором заданий и системой оценок
 </p>
 <!-- <p align="center">
 <a href="https://sonniy.notion.site/72491004fa1044d8b0dccf9cdeb44053">Подробнее о проекте</a>⠀⠀
