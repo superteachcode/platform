@@ -1,10 +1,6 @@
 # Superteach
 
 Онлайн-платформа для репетиторов и учеников с конструктором заданий и системой оценок
-<!-- <p align="center">
-<a href="https://sonniy.notion.site/72491004fa1044d8b0dccf9cdeb44053">Подробнее о проекте</a>⠀⠀
-<a href="https://sonniy.notion.site/b24de6d1c4c54b448d795778ced458ad?v=5a6fda7d65df4894bb2a323eb854213b">Бэклог</a>
-</p> -->
 
 ## Как устроена
 
@@ -34,11 +30,13 @@
 Чтобы установить локальную версию:
 
 1. Скачайте и установите [Python 3.12.8](https://www.python.org/downloads/release/python-3128/)
+
     > _Обратите внимание:_ на других версиях Python проект может не запуститься.
 
-2. Клонируйте исходный код платформы
+2. Клонируйте исходный код платформы командой:
+
     ```sh
-    git clone git@github.com:repetitkovo/platform.git
+    git clone git@github.com:superteachcode/platform.git
     ```
 
 3. Запустите `configure.sh` для первичной конфигурации проекта
@@ -47,7 +45,7 @@
 
 5. В зависимости от вашей ОС, по очереди напишите в консоль следующие команды:
 
-    **Windows**
+    **Бэкенд**
     ```sh
     pip install virtualenv
     ```
@@ -74,6 +72,28 @@
 
     ```sh
     python manage.py runserver
+    ```
+
+    **Фронтенд**
+    ```sh
+    cd frontend
+    ```
+
+    ```sh
+    npm i
+    ```
+
+    ```sh
+    npm run dev
+    ```
+
+    **Почтовый сервис**
+    ```sh
+    cd backend
+    ```
+
+    ```sh
+    aiosmtpd -n -l localhost:1725 --debug
     ```
 
     <!-- **Mac OS**
@@ -132,6 +152,25 @@
 ## Как запустить
 
 Для следующих запусков проекта нужно ввести в консоль команду:
+
+    **Бэкенд**
+
+    ```sh
+    cd backend && .\venv\Scripts\activate && python manage.py runserver
+    ```
+
+    **Фронтенд**
+
+    ```sh
+    cd frontend && npm run dev
+    ```
+
+    **Почтовый сервис**
+
+    ```sh
+    cd backend && aiosmtpd -n -l localhost:1725 --debug
+    ```
+
 <!--
 **Windows**
 ```sh
