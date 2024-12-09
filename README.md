@@ -1,7 +1,6 @@
 # Superteach
-<p align="center">
-Superteach — онлайн-платформа для репетиторов и учеников с конструктором заданий и системой оценок
-</p>
+
+Онлайн-платформа для репетиторов и учеников с конструктором заданий и системой оценок
 <!-- <p align="center">
 <a href="https://sonniy.notion.site/72491004fa1044d8b0dccf9cdeb44053">Подробнее о проекте</a>⠀⠀
 <a href="https://sonniy.notion.site/b24de6d1c4c54b448d795778ced458ad?v=5a6fda7d65df4894bb2a323eb854213b">Бэклог</a>
