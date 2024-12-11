@@ -80,7 +80,7 @@ def login_user(request, data: LoginSchema) -> {200: ActionMessageOut, 400: Inlin
 
    success = user.check_password(data.password)
 
-   if not success:
+   if success:
       login(request, user)
       return {
          "message": "User logged in successfully.",

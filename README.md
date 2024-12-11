@@ -30,7 +30,7 @@
 Чтобы установить локальную версию:
 
 1. Скачайте и установите [Python 3.12.8](https://www.python.org/downloads/release/python-3128/)
-   
+
     > _Обратите внимание:_ на других версиях Python проект может не запуститься.
 
 3. Клонируйте исходный код платформы командой:
@@ -49,105 +49,95 @@
     ```sh
     pip install virtualenv
     ```
-    
+
     ```sh
     cd backend
     ```
-    
+
     ```sh
     python -m venv venv
     ```
-    
+
     ```sh
     .\venv\Scripts\activate
     ```
-    
+
     ```sh
     pip install -r requirements.txt
     ```
-    
+
     ```sh
     python manage.py migrate
     ```
-    
+
     ```sh
     python manage.py runserver
     ```
-    
+
     **Фронтенд**
     ```sh
     cd frontend
     ```
-    
+
     ```sh
     npm i
     ```
-    
+
     ```sh
     npm run dev
     ```
-    
-    **Почтовый сервис**
-    ```sh
-    cd backend
-    ```
-    
-    ```sh
-    aiosmtpd -n -l localhost:1725 --debug
-    ```
-    
+
     <!-- **Mac OS**
     ```sh
     sudo pip3 install virtualenv
     ```
-    
+
     ```sh
     python3 -m venv venv
     ```
-    
+
     ```sh
     source venv/bin/activate
     ```
-    
+
     ```sh
     pip3 install -r requirements.txt
     ```
-    
+
     ```sh
     cd mamayapovar
     ```
-    
+
     ```sh
     python3 manage.py runserver
     ```
-    
+
     **Linux**
     ```sh
     pip install virtualenv
     ```
-    
+
     ```sh
     python3 -m venv venv
     ```
-    
+
     ```sh
     source venv/bin/activate
     ```
-    
+
     ```sh
     pip install -r requirements.txt
     ```
-    
+
     ```sh
     cd mamayapovar
     ```
-    
+
     ```sh
     python3 manage.py runserver
     ``` -->
 
 7. Готово! Можете переходить по адресу [127.0.0.1:8000](http://127.0.0.1:8000/) и работать с локальной версией проекта.
-    > Если вы запускаете локальную версию, то _уже загруженные изображения_ отображаться не будут, так как все пути в базе данных абсолютные, но если вы добавите свои рецепты, то все будет прекрасно работать!
 
 ## Как запустить
 

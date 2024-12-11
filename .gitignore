@@ -1,5 +1,7 @@
 .idea
 *env*
+node_modules
 db.sqlite3
 __pycache__
 .fleet
+pnpm-lock.yaml

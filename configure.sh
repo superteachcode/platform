@@ -47,6 +47,7 @@ DATABASES = {
 # env.py
 create_config "$CONFIG_DIR/env.py" "CSRF_TRUSTED_ORIGINS = [
    'http://localhost:5173',
+   'http://localhost:4173',
 ]
 DEBUG = True
 PRODUCTION = False

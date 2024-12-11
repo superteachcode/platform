@@ -1,0 +1,24 @@
+{
+  "name": "suptea",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Стартер для работы с проектом",
+  "main": "index.js",
+  "scripts": {
+    "setup:frontend": "cd frontend && pnpm i",
+    "setup:backend": "pip install virtualenv && cd backend && python -m venv venv && setup.bat",
+    "setup:win": "configure.sh && pnpm setup:frontend && pnpm setup:backend",
+    "dev:frontend": "cd frontend && pnpm dev",
+    "dev:backend": "cd backend && dev.bat",
+    "dev:mail": "cd backend && aiosmtpd -n -l localhost:1725 --debug",
+    "dev": "concurrently \"pnpm dev:frontend\" \"pnpm dev:backend\" \"pnpm dev:mail\"",
+    "build": "cd frontend && pnpm build",
+    "preview:frontend": "cd frontend && pnpm preview",
+    "preview": "pnpm build && concurrently \"pnpm preview:frontend\" \"pnpm dev:backend\" \"pnpm dev:mail\""
+  },
+  "author": "Alexey Kalinin & Nikolay Krylov",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
