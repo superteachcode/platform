@@ -20,6 +20,8 @@
 
 - **Фреймворк:** Django
 
+- **Библиотеки:** Djangokit, Djapy, Pydantic
+
 - **База данных:** PostgresSQL
 
 
@@ -45,9 +47,19 @@
 
 6. В зависимости от вашей ОС, по очереди напишите в консоль следующие команды:
 
+    ```sh
+    pnpm setup:win
+    ```
+
+    Или по отдельности:
+
     **Бэкенд**
     ```sh
     pip install virtualenv
+    ```
+
+    ```sh
+    pip install aiosmtpd
     ```
 
     ```sh
@@ -70,21 +82,13 @@
     python manage.py migrate
     ```
 
-    ```sh
-    python manage.py runserver
-    ```
-
     **Фронтенд**
     ```sh
     cd frontend
     ```
 
     ```sh
-    npm i
-    ```
-
-    ```sh
-    npm run dev
+    pnpm i
     ```
 
     <!-- **Mac OS**
@@ -141,7 +145,13 @@
 
 ## Как запустить
 
-Для следующих запусков проекта нужно ввести в консоль команду:
+Для запуска проекта нужно ввести в консоль команду:
+
+```sh
+pnpm dev
+```
+
+Или запускать сервера по отдельности:
 
 **Бэкенд**
 
@@ -152,30 +162,24 @@ cd backend && .\venv\Scripts\activate && python manage.py runserver
 **Фронтенд**
 
 ```sh
-cd frontend && npm run dev
+cd frontend && pnpm dev
 ```
 
-**Почтовый сервис**
+## Как собрать
+
+Для сборки проекта в продакшен нужно ввести в консоль команду:
 
 ```sh
-cd backend && aiosmtpd -n -l localhost:1725 --debug
+pnpm build
 ```
 
-<!--
-**Windows**
-```sh
-npm run dev
-```
+## Как тестить
 
-**Mac OS**
-```sh
-source venv/bin/activate & cd mamayapovar & python3 manage.py runserver
-```
+Для тестирования проекта после сборки нужно ввести в консоль команду:
 
-**Linux**
 ```sh
-source venv/bin/activate & cd mamayapovar & python3 manage.py runserver
-``` -->
+pnpm preview
+```
 
 ## Браузеры
 
