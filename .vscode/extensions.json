@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "jacobcassidy.css-nesting-syntax-highlighting",
+    "phoenisx.cssvar",
+    "dbaeumer.vscode-eslint",
+    "csstools.postcss",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "svelte.svelte-vscode",
+    "ardenivanov.svelte-intellisense",
+    "edwinhuish.better-comments-next"
+  ]
+}
