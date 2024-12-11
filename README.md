@@ -14,6 +14,8 @@
 
 - **Фреймворк:** Svelte 5 + Sveltekit
 
+- **Тесты:** Vitest, Playwright
+
 ### Бэкенд
 
 - **Язык:** Python 3.12.8
