@@ -1,5 +1,1 @@
-import dayjs from 'dayjs';
-import relativeTime from 'dayjs/plugin/relativeTime';
-
-dayjs.extend(relativeTime);
-export {dayjs as dayjs_};
+// Reexport your entry components here
